@@ -7,7 +7,7 @@
 ![GitHub issues](https://img.shields.io/github/issues/Saintkumbi/Pathfinder)
 ![GitHub license](https://img.shields.io/github/license/Saintkumbi/Pathfinder)
 
-![PathFinder Visualizer Demo](screenshots/demo-image.png)
+<img src="https://raw.githubusercontent.com/Saintkumbi/Pathfinder/main/screenshots/demo-image.png" alt="PathFinder Visualizer Demo" width="800"/>
 
 ### 🎮 Interactive Pathfinding Visualization
 Watch algorithms come to life as they navigate through custom mazes!
