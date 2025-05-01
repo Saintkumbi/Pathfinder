@@ -1,0 +1,65 @@
+/* PlayButton.css */
+
+/* Base Button Styles */
+.Btn {
+    width: 140px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(to right, #77530a, #ffd277, #77530a, #77530a, #ffd277, #77530a);
+    background-size: 250%;
+    background-position: left;
+    color: red;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-position 1s, transform 0.2s;
+    overflow: hidden;
+    text-transform: uppercase;
+    margin-top: 1rem;
+  }
+  
+  /* Overlay for Text */
+  .Btn::before {
+    position: absolute;
+    content: attr(data-text);
+    color: #ffd277;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 97%;
+    height: 90%;
+    border-radius: 8px;
+    transition: background-position 1s;
+    background-color: rgba(0, 0, 0, 0.842);
+    background-size: 200%;
+    pointer-events: none;
+  }
+  
+  /* Hover Effects */
+  .Btn:hover {
+    background-position: right;
+  }
+  
+  .Btn:hover::before {
+    background-position: right;
+  }
+  
+  /* Active (Pressed) State */
+  .Btn:active {
+    transform: scale(0.95);
+  }
+  
+  /* Disabled State */
+  .Btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+  
+  /* Optional: Adjust text color when disabled */
+  .Btn:disabled::before {
+    color: #cccccc;
+  }
+  

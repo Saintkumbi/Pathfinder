@@ -1,0 +1,112 @@
+/* Select.css */
+
+/* Container for the entire select component */
+.select {
+  width: 140px; /* Match PlayButton width */
+  height: 40px; /* Match PlayButton height */
+  cursor: pointer;
+  position: relative;
+  transition: background-position 1s, transform 0.2s;
+  color: white;
+  overflow: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 10px; /* Match PlayButton border-radius */
+  background: linear-gradient(to right, #2e7d32, #81c784, #2e7d32); /* Green gradient */
+  background-size: 250%;
+  background-position: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  box-shadow: 0 0 10px rgba(46, 125, 50, 0.5); /* Initial subtle glow */
+}
+
+/* Overlay for Selected Text */
+.select::before {
+  content: attr(data-selected);
+  color: #ffffff;
+  position: absolute;
+  left: 10px;
+  font-size: 15px;
+  z-index: 1;
+}
+
+/* Arrow icon */
+.arrow {
+  width: 25px;
+  height: 25px;
+  fill: white;
+  transition: transform 0.3s;
+  z-index: 2;
+}
+
+/* Dropdown options container */
+.options {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #2e7d32; /* Dark green */
+  position: absolute;
+  top: 45px; /* Below the select box */
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 300ms, visibility 300ms, top 300ms;
+  z-index: 99999;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+
+/* Show options when select is open */
+.select.open > .options {
+  opacity: 1;
+  visibility: visible;
+  top: 40px;
+}
+
+/* Rotate arrow when select is open */
+.select.open > .arrow {
+  transform: rotate(180deg);
+}
+
+/* Individual option styles */
+.option {
+  border-radius: 5px;
+  padding: 5px;
+  transition: background-color 300ms;
+  background-color: #2e7d32; /* Same as select background */
+  width: 100%;
+  font-size: 15px;
+  color: white;
+  cursor: pointer;
+}
+
+.option:hover {
+  background-color: #388e3c; /* Slightly lighter green on hover */
+}
+
+/* Hide radio inputs */
+.options input[type="radio"] {
+  display: none;
+}
+
+/* Label styles */
+.options label {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* Visually hidden text for accessibility */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

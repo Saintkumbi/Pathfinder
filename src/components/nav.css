@@ -1,0 +1,56 @@
+/* Nav.css */
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 7rem;
+    border-bottom: 1px solid #cac0ac;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 0 1rem;
+    background-color: #1C1505;
+  }
+  
+  .nav-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 90rem; 
+  }
+  
+  .nav-title {
+    font-size: 2rem;
+    color: #A77F33;
+    flex: 0 0 40%; /* Occupies 40% width on large screens */
+    display: none; /* Hidden on smaller screens */
+  }
+  
+  @media (min-width: 1024px) {
+    .nav-title {
+      display: block; /* Visible on large screens */
+    }
+  }
+  
+  .select-group {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 1; /* Takes up remaining space */
+    flex-wrap: wrap;
+    gap: 1rem; /* Space between elements */
+    padding-right: 6rem;
+    width: 97%;
+    height: 90%;
+    margin-bottom: 1rem;
+    color: #A77F33;
+  }
+  
+  .select-wrapper {
+    flex: 1; /* Each Select takes equal space */
+    min-width: 150px; /* Ensures Selects don't get too small */
+    color: white;
+    margin-right:2rem;
+
+  }
+  
