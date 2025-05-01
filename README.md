@@ -7,6 +7,11 @@
 ![GitHub issues](https://img.shields.io/github/issues/Saintkumbi/Pathfinder)
 ![GitHub license](https://img.shields.io/github/license/Saintkumbi/Pathfinder)
 
+<img src="screenshots/Demo Image.png" alt="PathFinder Visualizer Demo" width="800"/>
+
+### 🎮 Interactive Pathfinding Visualization
+Watch algorithms come to life as they navigate through custom mazes!
+
 </div>
 
 ## 🌟 About PathFinder
@@ -15,11 +20,11 @@ PathFinder is an innovative project designed to help users navigate and discover
 
 ## ✨ Features
 
-- 🗺️ Intelligent path finding algorithms
-- 🎯 Customizable search parameters
-- 📊 Real-time visualization
-- 🔄 Dynamic path updates
-- 🎨 Beautiful and intuitive interface
+- 🗺️ Intelligent path finding algorithms (DFS, BFS, A*, Dijkstra)
+- 🎯 Customizable search parameters and maze generation
+- 📊 Real-time visualization with adjustable speed
+- 🔄 Dynamic path updates and interactive grid
+- 🎨 Beautiful and intuitive dark-themed interface
 
 ## 🛠️ Tech Stack
 
@@ -59,11 +64,13 @@ npm run dev
 yarn dev
 ```
 
-## 📸 Screenshots
+## 🎯 Usage
 
-<div align="center">
-  <img src="screenshots/demo.png" alt="PathFinder Demo" width="800"/>
-</div>
+1. **Select a Maze Algorithm**: Choose from various maze generation algorithms like Recursive Division
+2. **Pick a Pathfinding Algorithm**: Select between Depth First Search, Breadth First Search, and more
+3. **Adjust Speed**: Control the visualization speed from slow to fast
+4. **Watch it Work**: See the algorithm navigate through the maze in real-time
+5. **Reset & Repeat**: Try different combinations of mazes and algorithms!
 
 ## 🤝 Contributing
 
